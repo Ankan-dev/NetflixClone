@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="/NetflixIcon.png">
+</head>
+
+<body onload="vanishImageOne()">
+  <main>
+    <nav>
+      <div class="left">
+        <div id="logo">
+          <img src="netflix.png" alt="" />
+        </div>
+        <div class="links">
+          <ul>
+            <li>Home</li>
+            <li>TV Shows</li>
+            <li>Movies</li>
+            <li>Recently Added</li>
+            <li>My List</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <button>
+          <img src="search.png" />
+        </button>
+        <button>
+          <img src="bell.png" alt="" />
+        </button>
+        <button>
+          <img src="profile.jpg" alt="" />
+        </button>
+      </div>
+    </nav>
+    <div class="page1">
+      <div id="layer">
+        <button id="last">
+          <img src="back.png" style="width: 50%; height: 50%" />
+        </button>
+        <button id="next">
+          <img src="next.png" style="width: 50%; height: 50%" />
+        </button>
+      </div>
+      <div class="caraosel">
+        <div class="slide" id="image1">
+          <div id="info1">
+            <img src="moneylogo.png" style="width:90%; height:50%">
+            <p style="font-family: 'Playfair Display', serif;margin-top:15px">Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.
+              <br><br><span style="font-weight: bold;">Starring: </span>Úrsula Corberó,Álvaro Morte,Itziar Ituño
+              <br><br><span style="font-weight: bold;">Creators: </span>Álex Pina</p>
+          </div>
+          <img src="carousel1.jpg" class="img" />
+          <video autoplay loop muted src="money.mp4"></video>
+        </div>
+        <div class="slide" id="image2">
+          <div id="info2">
+            <img src="wedlogo.png" style="width:90%; height:50%">
+            <p style="font-family: 'Playfair Display', serif;margin-top:15px">Smart, sarcastic and a little dead inside, Wednesday Addams investigates a murder spree while making new friends — and foes — at Nevermore Academy.
+              <br><br><span style="font-weight: bold;">Starring: </span>Jenna Ortega,Gwendoline Christie,Riki Lindhome
+              <br><br><span style="font-weight: bold;">Creators: </span>Alfred Gough,Miles Millar
+            </p>
+          </div>
+          <img src="carousel2.jpg" class="img" />
+          <video autoplay loop muted src="Wednesday.mp4"></video>
+        </div>
+        <div class="slide" id="image3">
+          <div id="info3">
+            <img src="strangerlogo.png" style="width:90%; height:50%">
+            <p style="font-family: 'Playfair Display', serif;margin-top:15px">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.
+              <br><br><span style="font-weight: bold;">Starring: </span>Winona Ryder,David Harbour,Millie Bobby Brown
+              <br><br><span style="font-weight: bold;">Creators:</span> The Duffer Brothers</p>
+          </div>
+          <img src="carousel3.jpg" class="img" />
+          <video autoplay loop muted src="StrangerThings.mp4"></video>
+        </div>
+      </div>
+      <div class="scroller">
+        <h3 style="margin: 10px">New Releases</h3>
+        <div class="scroller1">
+          <img src="recent1.jpg" />
+          <img src="recent2.jpg" />
+          <img src="recent3.jpg" />
+          <img src="recent4.jpg" />
+          <img src="recent5.png" style="background-color: black" />
+          <img src="recent6.jpg" />
+          <img src="recent1.jpg" />
+          <img src="recent2.jpg" />
+          <img src="recent3.jpg" />
+          <img src="recent4.jpg" />
+          <img src="recent5.png" style="background-color: black" />
+          <img src="recent6.jpg" />
+        </div>
+          <img src="" alt="">
+        </button>
+      </div>
+    </div>
+    <div class="page2">
+      <div id="trending">
+        <h3 style="margin-left: 10px">Trending Now</h3>
+        <div id="trendingin">
+          <img src="vampirediaries.png" />
+          <img src="peakyblinders.jpg" />
+          <img src="sexEducation.jpg" />
+          <img src="squidgame.png" />
+          <img src="neverhaveiever.jpg" />
+          <img src="lupin.jpg" />
+          <img src="lucifer.jpg" />
+          <img src="good doctor.jpg" />
+          <img src="friends.jpg" />
+          <img src="destiened with you.jpg" />
+        </div>
+      </div>
+
+      <div id="anime">
+        <h3 style="margin-left: 10px">Anime</h3>
+        <div id="animein">
+          <img src="spy.png" />
+          <img src="one punch man.jpeg" />
+          <img src="naruto.jpg" />
+          <img src="myhero.jpg" />
+          <img src="haikyu.jpeg" />
+          <img src="damonslayer.jpg" />
+          <img src="bleach.jpg" />
+          <img src="blackcover.jpg" />
+          <img src="sonic prime.jpg" />
+          <img src="baki.jpg" />
+        </div>
+      </div>
+
+      <div id="indian">
+        <h3 style="margin-left: 10px">Indian Releases</h3>
+        <div id="indianin">
+          <img src="lust.jpg" />
+          <img src="mismatched.jpg" />
+          <img src="khufia.jpg" />
+          <img src="sacret.jpg" />
+          <img src="jaane.jpg" />
+          <img src="khakee.jpg" />
+          <img src="guns.jpg" />
+          <img src="delhicrimes.jpg" />
+          <img src="missionmajnu.jpg" />
+          <img src="chor.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="page3">
+      <div id="again">
+        <h3 style="margin-left: 10px">Watch Again</h3>
+        <div id="againin">
+          <img src="vampirediaries.png" />
+          <img src="peakyblinders.jpg" />
+          <img src="recent4.jpg" />
+          <img src="naruto.jpg" />
+          <img src="neverhaveiever.jpg" />
+          <img src="mismatched.jpg" />
+          <img src="chor.jpg" />
+          <img src="good doctor.jpg" />
+          <img src="friends.jpg" />
+          <img src="lust.jpg" />
+        </div>
+      </div>
+
+      <div id="foryou">
+        <h3 style="margin-left: 10px">For you</h3>
+        <div id="foryouin">
+          <img src="khufia.jpg" />
+          <img src="one punch man.jpeg" />
+          <img src="missionmajnu.jpg" />
+          <img src="squidgame.png" />
+          <img src="khakee.jpg" />
+          <img src="damonslayer.jpg" />
+          <img src="lucifer.jpg" />
+          <img src="blackcover.jpg" />
+          <img src="lupin.jpg" />
+          <img src="guns.jpg" />
+        </div>
+      </div>
+
+      <div id="Romantic">
+        <h3 style="margin-left: 10px">Romantic Movies</h3>
+        <div id="Romanticin">
+          <img src="after.jpg" />
+          <img src="365.jpg" />
+          <img src="fifty.jpg" />
+          <img src="world.jpeg" />
+          <img src="aedil.jpg" />
+          <img src="kabhi.jpg" />
+          <img src="18.jpg" />
+          <img src="tujhoothi.jpeg" />
+          <img src="missionmajnu.jpg" />
+          <img src="Chandigarh_Kare_Aashiqui_poster.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="page4">
+      <div class="leftpart">
+        <h3>About</h3>
+        <p>
+          Netflix, founded in 1997 by Reed Hastings and Marc Randolph, has revolutionized the entertainment industry. As
+          a global streaming giant, it offers a vast library of movies, TV series, and original content to millions of
+          subscribers worldwide.
+
+          Netflix's success stems from its user-friendly interface and the ability to stream content on a wide range of
+          devices, from smartphones to smart TVs. Its algorithm-driven recommendation system personalizes the viewing
+          experience, keeping viewers engaged and entertained.
+
+          The platform is renowned for its commitment to producing high-quality original content, from critically
+          acclaimed series like "Stranger Things" and "The Crown" to groundbreaking films like "Roma" and "Bird Box."
+          Netflix's investment in diverse storytelling has led to a cultural impact felt across the globe.
+
+          Moreover, Netflix has expanded its footprint, transcending borders and languages, making it a true global
+          entertainment powerhouse. With its constant innovation and dedication to storytelling, Netflix continues to
+          shape the way we consume entertainment in the 21st century.
+        </p>
+        <div id="endingline">
+          <p style="margin-top:50px">copyright @ 2023 All rights are reserved by ABCDEF</p>
+        </div>
+      </div>
+      <div class="rightpart">
+        <div class="rightin" id="net">
+          <h3>Netflix</h3>
+          <ul>
+            <li>Home</li>
+            <li>TV Shows</li>
+            <li>Movies</li>
+            <li>Recently Added</li>
+            <li>Mylist</li>
+          </ul>
+        </div>
+        <div class="rightin" id="contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Instagram</li>
+            <li>Linkedin</li>
+            <li>Github</li>
+            <li>Email</li>
+            <li>Twitter</li>
+          </ul>
+          <div class="icons">
+            <img src="insta.png">
+            <img src="linkedin.png">
+            <img src="git.png">
+            <img src="mail.png">
+            <img src="twitter.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

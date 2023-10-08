@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Work sans;
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  width: 100%;
+  height: 15%;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo img {
+  width: 30%;
+  height: 80%;
+  margin-left: 10%;
+}
+
+.links ul {
+  position: absolute;
+  left: 45%;
+  display: flex;
+  gap: 30px;
+}
+
+.links ul li {
+  list-style: none;
+}
+
+.links ul li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.right {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.right button {
+  width: 7%;
+  height: 18%;
+  background-color: transparent;
+  border: none;
+}
+
+.right button img {
+  width: 100%;
+  height: 100%;
+}
+
+.right button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.47);
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#layer button {
+  border: 2px solid white;
+  border-radius: 50px;
+  margin: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+#layer button:hover {
+  cursor: pointer;
+}
+
+#last {
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+}
+
+#next {
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  width: 100px;
+  height: 100px;
+}
+
+.caraosel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.caraosel:hover {
+  cursor: pointer;
+}
+
+.caraosel div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all ease 1s;
+}
+
+.caraosel div img {
+  width: 100%;
+  height: 100%;
+  transition: all ease 1s;
+}
+
+.caraosel div video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scroller {
+  display: inline-block;
+  white-space: nowrap;
+  height: 30%;
+  width: 100%;
+  position: relative;
+  top: -30%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  z-index: 11;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.scroller .scroller1 {
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  height: 80%;
+  animation: scroll 20s linear infinite;
+}
+
+.scroller .scroller1 img {
+  width: 16.67%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.page2 {
+  width: 100%;
+  height: 100vh;
+  padding-top: 10px;
+}
+
+.page2 div {
+  width: 100%;
+  height: 30%;
+  margin-top: 20px;
+
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.page2 ::-webkit-scrollbar {
+  display: none;
+}
+
+#trending #trendingin {
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+#trending #trendingin img {
+  width: 14%;
+  height: 100%;
+  margin: 10px;
+}
+
+#trending #trendingin img:hover {
+  z-index: 99;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#anime #animein {
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+#anime #animein img {
+  width: 14%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+#anime #animein img:hover {
+  z-index: 99;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#indian #indianin {
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+#indian #indianin img {
+  width: 14%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+#indian #indianin img:hover {
+  z-index: 99;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.page3 {
+  width: 100%;
+  height: 100vh;
+}
+
+.page3 div {
+  width: 100%;
+  height: 30%;
+  margin-top: 20px;
+
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.page3 ::-webkit-scrollbar {
+  display: none;
+}
+
+#again #againin {
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+#again #againin img {
+  width: 14%;
+  height: 100%;
+  margin: 10px;
+}
+
+#again #againin img:hover {
+  z-index: 99;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#foryou #foryouin {
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+#foryou #foryouin img {
+  width: 14%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+#foryou #foryouin img:hover {
+  z-index: 99;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#Romantic #Romanticin {
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+#Romantic #Romanticin img {
+  width: 14%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+#Romantic #Romanticin img:hover {
+  z-index: 99;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.page4 {
+  width: 100%;
+  height: 50vh;
+  margin-top: 50px;
+  background-color: rgb(29, 28, 28);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.page4 .leftpart {
+  margin-left: 90px;
+  height: 100%;
+  width: 20%;
+}
+
+.page4 .leftpart h3 {
+  margin: 10px 0px 10px;
+}
+
+.page4 .leftpart p {
+  font-size: small;
+  text-align: justify;
+}
+
+.page4 .rightpart {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+
+.page4 .rightpart .rightin {
+  position: relative;
+  left: 13%;
+  flex: (1);
+  margin-right: 40px;
+  line-height: 50px;
+}
+
+.page4 .rightpart .rightin ul li {
+  list-style: none;
+  font-size: small;
+  text-align: justify;
+}
+
+.page4 .rightpart .rightin .icons {
+  width: 100%;
+  height: 7%;
+
+  position: relative;
+  top: 15%;
+  right: 60%;
+  display: flex;
+  gap: 20px;
+}
+
+.page4 .rightpart .rightin .icons img {
+  height: 100%;
+  width: 16%;
+}
+
+#info1 {
+  width: 35%;
+  height: 35%;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 11%;
+}
+
+#info2 {
+  width: 35%;
+  height: 35%;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 11%;
+}
+
+#info3 {
+  width: 35%;
+  height: 35%;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 11%;
+}
